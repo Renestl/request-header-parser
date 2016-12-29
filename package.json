@@ -1,0 +1,23 @@
+{
+  "name": "request-header-parser",
+  "version": "1.0.0",
+  "description": "Request Header Parser Microservice project for FCC",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Renestl/request-header-parser.git"
+  },
+  "author": "Jennifer Currie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Renestl/request-header-parser/issues"
+  },
+  "homepage": "https://github.com/Renestl/request-header-parser#readme",
+  "dependencies": {
+    "ejs": "^2.5.5",
+    "express": "^4.14.0"
+  }
+}
