@@ -18,4 +18,8 @@ Build a full stack JavaScript app that is functionally similar to this: https://
 
 ### Project links:
 * [Github Repository](https://github.com/Renestl/request-header-parser.git)
-* [Project]()
+* [Project](https://thawing-plateau-57695.herokuapp.com/)
+
+### Installation
+
+node app.js
