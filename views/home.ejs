@@ -3,9 +3,23 @@
 <div class='container'>
 <h1>Request Header Parser</h1>
 
-<h3>IP address: <span>here</span></h3>
-<h3>Language:</h3>
-<h3>Operating System:</h3>
+	<blockquote cite='https://www.freecodecamp.com/challenges/request-header-parser-microservice'>
+	<h5>User story:</h5>
+	<p> I can get the IP address, language and operating system for my browser.</p>
+	</blockquote>
+
+	<h3>Example usage:</h3>
+	<code>http://localhost:3000/api/whoami</code>
+
+	<h3>Example output:</h3>
+	<code>
+		<ul>
+			<li><strong>IP address:</strong> "127.0.0.1"</li>
+			<li><strong>Language:</strong> "en-US"</li>
+			<li><strong>Operating System:</strong> "Windows NT 6.1; WOW64"</li>
+		</ul>
+	</code>
+
 </div>
 
 <% include partials/footer%>

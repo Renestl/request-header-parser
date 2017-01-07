@@ -1,5 +1,6 @@
 body {
-    background-color: #C390D4;
+    background-color: #E4C0F0;
+    font-size: 16px;
 }
 
 .container {
@@ -7,10 +8,13 @@ body {
 }
 
 h3 {
-    
+   font-weight: bold; 
 }
 
 span {
     font-weight: normal;
 }
 
+li {
+    list-style: none;
+}

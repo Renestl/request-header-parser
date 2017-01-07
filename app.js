@@ -8,6 +8,24 @@ app.get('/', function(req, res) {
 	res.render('home');
 });
 
-app.listen(3000, '127.0.0.1', function() {
-	console.log('Server has started!');
+app.get('/api/whoami', function(req, res) {
+
+	var address = req.headers['host'];
+	var language = req.headers['accept-language'].split(',')[0];
+	var opSys =  req.headers['user-agent'].match(/\([^\(\)\n]*\)/)[0].split("(")[1].split(")")[0];
+
+	res.render('whoami', {addressVar: address,
+						languageVar: language,
+						osVar: opSys});
 });
+
+app.get('*', function(req, res) {
+	res.render('home');
+});
+
+var port = process.env.PORT || 3000;
+  app.listen(port);
+
+// app.listen(3000, '127.0.0.1', function() {
+// 	console.log('Server has started!');
+// });
