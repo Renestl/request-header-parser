@@ -10,10 +10,12 @@ app.get('/', function(req, res) {
 
 app.get('/api/whoami', function(req, res) {
 
-	var address = req.ip;
+	var address = req.ip ;
 		if(address.substr(0,7) === "::ffff:"){
 			address = address.substr(7);
 		}
+
+	// var address = req.ip || req.headers['x-forwarded-for'];
 	var language = req.headers['accept-language'].split(',')[0];
 	var opSys =  req.headers['user-agent'].match(/\([^\(\)\n]*\)/)[0].split("(")[1].split(")")[0];
 
@@ -26,8 +28,10 @@ app.get('*', function(req, res) {
 	res.render('home');
 });
 
-// var port = process.env.PORT || 3000;
-//   app.listen(port);
+var port = process.env.PORT || 3000;
+  app.listen(port, function() {
+	  console.log('Server has started!');
+  });
 
 // app.listen(3000, '127.0.0.1', function() {
 // 	console.log('Server has started!');
